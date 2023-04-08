@@ -1,19 +1,20 @@
-import { Product } from "../models/product.model";
-
-export class ProductRepository {
-  static getAll() {
-    return Product.find();
+import { Product, ProductModel } from "../models/product.model";
+class ProductRepository {
+  getAll(): Promise<Product[]> {
+    return ProductModel.find();
   }
-  static getById(id: number) {
-    return Product.findOne({ id: id });
+  getById(id: number): Promise<Product | null> {
+    return ProductModel.findOne({ id: id });
   }
-  static create(product: typeof Product) {
-    return Product.create(product);
+  create(product: Product): Promise<Product> {
+    return ProductModel.create(product);
   }
-  static update(id: number, product: Partial<typeof Product>) {
-    return Product.findOneAndUpdate({ id: id }, { $set: product });
+  update(id: number, product: Partial<Product>): Promise<Product | null> {
+    return ProductModel.findOneAndUpdate({ id: id }, { $set: product });
   }
-  static delete(id: number) {
-    return Product.findOneAndDelete({ id: id });
+  delete(id: number): Promise<Product | null> {
+    return ProductModel.findOneAndDelete({ id: id });
   }
 }
+
+export default new ProductRepository();

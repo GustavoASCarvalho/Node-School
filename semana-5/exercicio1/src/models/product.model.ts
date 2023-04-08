@@ -1,5 +1,4 @@
-import { Schema } from "mongoose";
-import mongoose from "mongoose";
+import mongoose, { InferSchemaType, Schema } from "mongoose";
 
 export const ProductSchema = new Schema({
   id: {
@@ -29,4 +28,6 @@ export const ProductSchema = new Schema({
   },
 });
 
-export const Product = mongoose.model("Product", ProductSchema);
+export type Product = InferSchemaType<typeof ProductSchema>;
+
+export const ProductModel = mongoose.model("Product", ProductSchema);

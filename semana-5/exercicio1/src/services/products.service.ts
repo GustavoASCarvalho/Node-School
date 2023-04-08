@@ -1,6 +1,6 @@
 import { Product } from "../models/product.model";
 
-import { ProductRepository } from "../repositories/product.repository";
+import ProductRepository from "../repositories/product.repository";
 
 class ProductsService {
   getAll() {
@@ -8,22 +8,23 @@ class ProductsService {
   }
 
   getById(id: number) {
-    id = Number(id);
     return ProductRepository.getById(id);
   }
 
-  create(product: typeof Product) {
+  create(product: Product) {
     return ProductRepository.create(product);
   }
 
-  update(id: number, product: Partial<typeof Product>) {
-    id = Number(id);
+  update(id: number, product: Partial<Product>) {
     return ProductRepository.update(id, product);
   }
 
-  delete(id: number) {
-    id = Number(id);
-    return ProductRepository.delete(id);
+  async delete(id: number) {
+    const product = await ProductRepository.delete(id);
+    if (!product) {
+      throw new Error("Product not found");
+    }
+    return product;
   }
 }
 
