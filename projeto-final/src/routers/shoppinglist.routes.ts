@@ -28,6 +28,24 @@ router.get("/:id", authMiddleware, async (req: Request, res: Response) => {
   }
 });
 
+router.put("/:id", authMiddleware, async (req: Request, res: Response) => {
+  try {
+    const shoppinglist = req.body;
+    if (shoppinglist.owner !== res.locals.userId)
+      return res.status(401).send({ message: "Não autorizado" });
+    const updatedShoppingList = await ShoppingListService.update(
+      req.params.id,
+      shoppinglist
+    );
+    res.status(200).send({
+      message: "ShoppingList updated successfully",
+      shoppinglist: updatedShoppingList,
+    });
+  } catch (error: any) {
+    res.status(500).send({ message: error.message });
+  }
+});
+
 router.post("/", authMiddleware, async (req: Request, res: Response) => {
   try {
     const shoppinglist = req.body;

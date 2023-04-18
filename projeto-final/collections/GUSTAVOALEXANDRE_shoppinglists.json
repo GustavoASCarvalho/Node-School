@@ -1,0 +1,93 @@
+[{
+  "_id": {
+    "$oid": "643e9cb05c496847aca46697"
+  },
+  "owner": {
+    "$oid": "643e9c965c496847aca46693"
+  },
+  "users": [],
+  "createdAt": {
+    "$date": "2023-04-18T13:34:00.191Z"
+  },
+  "items": [
+    {
+      "name": "Pão",
+      "quantity": 2,
+      "unit": "unidades",
+      "checked": false,
+      "createdAt": {
+        "$date": "2023-04-18T13:34:00.190Z"
+      },
+      "_id": {
+        "$oid": "643e9cb05c496847aca46698"
+      }
+    },
+    {
+      "name": "Leite",
+      "quantity": 1,
+      "unit": "litro",
+      "checked": false,
+      "createdAt": {
+        "$date": "2023-04-18T13:34:00.190Z"
+      },
+      "_id": {
+        "$oid": "643e9cb05c496847aca46699"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643e9d175c496847aca4669f"
+  },
+  "owner": {
+    "$oid": "643e9cc35c496847aca4669b"
+  },
+  "users": [
+    {
+      "$oid": "643e9c965c496847aca46693"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-04-18T13:34:00.191Z"
+  },
+  "items": [
+    {
+      "name": "Carne",
+      "quantity": 2,
+      "unit": "kg",
+      "checked": false,
+      "createdAt": {
+        "$date": "2023-04-18T13:40:44.649Z"
+      },
+      "_id": {
+        "$oid": "643e9e0cf4bb23f8ba464b95"
+      }
+    },
+    {
+      "name": "Sal",
+      "quantity": 1,
+      "unit": "kg",
+      "checked": false,
+      "createdAt": {
+        "$date": "2023-04-18T13:40:44.649Z"
+      },
+      "_id": {
+        "$oid": "643e9e0cf4bb23f8ba464b96"
+      }
+    },
+    {
+      "name": "Maionese",
+      "quantity": 2,
+      "unit": "unidades",
+      "checked": false,
+      "createdAt": {
+        "$date": "2023-04-18T13:40:44.649Z"
+      },
+      "_id": {
+        "$oid": "643e9e0cf4bb23f8ba464b97"
+      }
+    }
+  ],
+  "__v": 0
+}]

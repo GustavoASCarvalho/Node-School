@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "b68afd0e-d436-44ed-9e42-ec010e4e881b",
+		"name": "ShoppingList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19928553"
+	},
+	"item": [
+		{
+			"name": "ShoppingList",
+			"item": [
+				{
+					"name": "ShoppingList",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0M2U5Mzk2Y2NiZWY3MTY3NWYxYmUzOCIsImlhdCI6MTY4MTgyMzA1MiwiZXhwIjoxNjgxODI2NjUyfQ.Mw0fC9-STgiQydqjl-2T9PS6TeIv05m4Vv5a_kP73xY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/shoppinglist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"shoppinglist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShoppingList ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0M2U5Mzk2Y2NiZWY3MTY3NWYxYmUzOCIsImlhdCI6MTY4MTgyMjYzMywiZXhwIjoxNjgxODI2MjMzfQ.ckvD4tsnlhR8StzyZaTb3yGJuFgCqwJrxuD3_Xu-Euo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/shoppinglist/643e962109a8cdf387a644f7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"shoppinglist",
+								"643e962109a8cdf387a644f7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShoppingList ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0M2U5Mzk2Y2NiZWY3MTY3NWYxYmUzOCIsImlhdCI6MTY4MTgyMzA1MiwiZXhwIjoxNjgxODI2NjUyfQ.Mw0fC9-STgiQydqjl-2T9PS6TeIv05m4Vv5a_kP73xY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/shoppinglist/643e962109a8cdf387a644f7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"shoppinglist",
+								"643e962109a8cdf387a644f7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShoppingList",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0M2U5Mzk2Y2NiZWY3MTY3NWYxYmUzOCIsImlhdCI6MTY4MTgyMzA1MiwiZXhwIjoxNjgxODI2NjUyfQ.Mw0fC9-STgiQydqjl-2T9PS6TeIv05m4Vv5a_kP73xY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"owner\": \"643e9396ccbef71675f1be38\",\r\n  \"users\": [],\r\n  \"items\": [\r\n    {\r\n      \"name\": \"Pão\",\r\n      \"quantity\": 2,\r\n      \"unit\": \"unidades\"\r\n    },\r\n    {\r\n      \"name\": \"Leite\",\r\n      \"quantity\": 1,\r\n      \"unit\": \"litro\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/shoppinglist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"shoppinglist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShoppingList Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0M2Q5ODY3ZDZjOTY5ODEwNmZlMWU3NyIsImlhdCI6MTY4MTc2MDI0NiwiZXhwIjoxNjgxNzYzODQ2fQ.e_S1xO8vuPlmslgW5F-hVdZ6d4pr7m5wOaXAf45l1Vo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"owner\": \"6439800ea69f2f2e862d444e\",\r\n  \"users\": [\"6439803dd27d2ad0b0b4902d\"],\r\n  \"items\": [\r\n    {\r\n      \"name\": \"Pão\",\r\n      \"quantity\": 3,\r\n      \"unit\": \"unidades\"\r\n    },\r\n    {\r\n      \"name\": \"Leite\",\r\n      \"quantity\": 1,\r\n      \"unit\": \"litro\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/shoppinglist/643da03a032cd6aa4c500ac4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"shoppinglist",
+								"643da03a032cd6aa4c500ac4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"gustavo\",\r\n    \"email\": \"gustavo@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0M2U5Mzk2Y2NiZWY3MTY3NWYxYmUzOCIsImlhdCI6MTY4MTgyMzA1MiwiZXhwIjoxNjgxODI2NjUyfQ.Mw0fC9-STgiQydqjl-2T9PS6TeIv05m4Vv5a_kP73xY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0M2U5Mzk2Y2NiZWY3MTY3NWYxYmUzOCIsImlhdCI6MTY4MTgyMzA1MiwiZXhwIjoxNjgxODI2NjUyfQ.Mw0fC9-STgiQydqjl-2T9PS6TeIv05m4Vv5a_kP73xY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/643e9396ccbef71675f1be38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"643e9396ccbef71675f1be38"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Att",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0M2U5Mzk2Y2NiZWY3MTY3NWYxYmUzOCIsImlhdCI6MTY4MTgyMzA1MiwiZXhwIjoxNjgxODI2NjUyfQ.Mw0fC9-STgiQydqjl-2T9PS6TeIv05m4Vv5a_kP73xY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"gustavo alexandre\",\r\n    \"email\": \"gustavo@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/643e9396ccbef71675f1be38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"643e9396ccbef71675f1be38"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"gustavo@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/authorization",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"authorization"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

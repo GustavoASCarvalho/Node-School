@@ -24,7 +24,9 @@ class ShoppingListRepository {
   }
 
   getAllByUserId(userId: string): Promise<ShoppingList[]> {
-    return ShoppingListModel.find({ owner: userId });
+    return ShoppingListModel.find({
+      $or: [{ owner: userId }, { users: userId }],
+    });
   }
 }
 
