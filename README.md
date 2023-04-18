@@ -1,5 +1,7 @@
 # (PROJETO-FINAL) Gerenciador de lista de supermecados
 
+Com esse gerenciador você podera criar lista de supermercados e compartilhar com quem você quiser
+
 ## Começando
 
 Este é um exemplo de como você pode configurar e rodar seu projeto localmente.
